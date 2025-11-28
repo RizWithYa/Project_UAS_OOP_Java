@@ -1,4 +1,5 @@
 com\kelompok6\game\App.class
+com\kelompok6\game\PowerUp.class
 com\kelompok6\game\Game.class
 com\kelompok6\game\Main.class
 com\kelompok6\game\Enemy.class

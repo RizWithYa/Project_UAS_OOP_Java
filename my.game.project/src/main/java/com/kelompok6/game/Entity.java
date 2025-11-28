@@ -19,7 +19,7 @@ public abstract class Entity {
     public int getX() { return x; }
     public int getY() { return y; }
 
-    // Fungsi menggambar ke layar Lanterna
+
     public void draw(Screen screen) {
         screen.setCharacter(x, y, new TextCharacter(symbol, color, TextColor.ANSI.BLACK));
     }

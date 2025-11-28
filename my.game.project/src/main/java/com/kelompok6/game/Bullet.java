@@ -3,21 +3,27 @@ package com.kelompok6.game;
 import com.googlecode.lanterna.TextColor;
 
 public class Bullet extends Entity {
+    private int dx;
     private int dy;
-    private int speedDelay; // Seberapa sering peluru bergerak
+    private int speedDelay;
     private int tickCounter = 0;
 
-    // Constructor baru menerima parameter 'speedDelay'
-    public Bullet(int x, int y, int dy, TextColor color, int speedDelay) {
+
+    public Bullet(int x, int y, int dx, int dy, TextColor color, int speedDelay) {
         super(x, y, '|', color);
+        this.dx = dx;
         this.dy = dy;
         this.speedDelay = speedDelay;
+
+
+        if(dx < 0) this.symbol = '\\';
+        if(dx > 0) this.symbol = '/';
     }
 
     public void update() {
         tickCounter++;
-        // Hanya bergerak jika counter sudah mencapai speedDelay
         if (tickCounter >= speedDelay) {
+            x += dx;
             y += dy;
             tickCounter = 0;
         }

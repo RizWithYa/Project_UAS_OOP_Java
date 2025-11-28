@@ -23,7 +23,6 @@ public class Main {
             screen.stopScreen();
             System.out.println("Game Over!");
 
-            // Paksa berhenti total karena JFrame kadang masih nyangkut
             System.exit(0);
 
         } catch (Exception e) {
