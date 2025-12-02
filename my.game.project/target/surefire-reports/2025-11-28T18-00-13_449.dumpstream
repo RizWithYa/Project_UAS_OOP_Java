@@ -1,5 +1,0 @@
-# Created at 2025-11-28T18:00:13.621
-Boot Manifest-JAR contains absolute paths in classpath 'D:\Proyek Gamew\my.game.project\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-'other' has different root
-
